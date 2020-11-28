@@ -1,14 +1,17 @@
 [tool.poetry]
 name = "benzema"
 version = "0.1.0"
-description = ""
-authors = ["Zabana <karim.cheurfi@gmail.com>"]
+description = "A straight forward and easy to use bencoding library written in Python 3"
+authors = ["fishr <karim@fishr.xyz>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+neovim = "^0.3.1"
+pynvim = "^0.4.2"
+flake8 = "^3.8.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
