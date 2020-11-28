@@ -110,7 +110,7 @@ class Decoder(object):
         # update index to start at end of string
         self._index = start_index + chars_to_read
 
-        return data.decode('utf-8')
+        return data
 
     @property
     def _opening_char(self):

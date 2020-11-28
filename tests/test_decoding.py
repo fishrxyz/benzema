@@ -20,24 +20,24 @@ def test_decode_wrong_type():
 
 def test_decode_to_string():
     decoded_string = Decoder(test_string).decode()
-    expected_result = "Hatem Ben Arfa"
-    assert isinstance(decoded_string, str)
+    expected_result = b'Hatem Ben Arfa'
+    assert isinstance(decoded_string, bytes)
     assert decoded_string == expected_result
 
 
 def test_decode_to_empty_string():
     decoded_string = Decoder(b'0:').decode()
-    expected_result = ""
-    assert isinstance(decoded_string, str)
+    expected_result = b''
+    assert isinstance(decoded_string, bytes)
     assert decoded_string == expected_result
 
 
 def test_decode_to_dict():
     decoded_dict = Decoder(test_dict).decode()
     expected_result = OrderedDict({
-        "name": "Hatem Ben Arfa",
-        "age": 33,
-        "clubs": ["NUFC", "OL"]
+        b"name": b"Hatem Ben Arfa",
+        b"age": 33,
+        b"clubs": [b'NUFC', b'OL']
     })
     assert isinstance(decoded_dict, OrderedDict)
     assert decoded_dict == expected_result
@@ -52,7 +52,7 @@ def test_decode_to_empty_dict():
 
 def test_decode_to_list():
     decoded_list = Decoder(test_list).decode()
-    expected_result = ["Ben Arfa", "Benzema", "Mahrez", "Aouar"]
+    expected_result = [b'Ben Arfa', b'Benzema', b'Mahrez', b'Aouar']
     assert isinstance(decoded_list, list)
     assert decoded_list == expected_result
 
