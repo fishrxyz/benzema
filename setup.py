@@ -8,7 +8,7 @@ setuptools.setup(
 	name="benzema",
 
 	# version of the module
-	version="0.1.0",
+	version="0.1.1",
 
 	# Name of Author
 	author="KC Fishr",
