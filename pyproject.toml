@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "benzema"
-version = "0.1.1"
+version = "0.1.2"
 description = "A straight forward and easy to use bencoding library written in Python 3"
 authors = ["fishr <karim@fishr.xyz>"]
 
