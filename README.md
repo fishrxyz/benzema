@@ -35,7 +35,7 @@ from benzema.decoder import Decoder
 
 # encode
 from benzema.encoder import Encoder
->>> data = Encoder(["Benzema", "Ben Arfa", "Mahrez", "Aouar"]).decode()
+>>> data = Encoder(["Benzema", "Ben Arfa", "Mahrez", "Aouar"]).encode()
 >>> data
 >>> b'l7:Benzema8:Ben Arfa6:Mahrez5:Aouare'
 ```
@@ -52,7 +52,8 @@ license.
 
 
 ### Tests
-You can execute the tests by running the following command
+
+Tests can be run using the following command
 
 ```bash
 pytest -vv -s tests/  # for verbosity and catching print statements
@@ -61,5 +62,5 @@ pytest -vv -s tests/  # for verbosity and catching print statements
 ### Contributing
 
 All contributions are welcome. If you see anything you think should be changed,
-don't be shy and either open an issue or even better for the project and submit
-a PR. I'd be most happy to review and collaborate with the community.
+don't be shy and either open an issue or even better, submit a PR.
+I'd be most happy to review them and collaborate with the community.
